@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="utf-8">
   <title>Victoria Casterá - Portfolio</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- LIBS CSS (ORIGINAL) -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-  <!-- Librerías -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
-
-  <!-- TU CSS -->
+  <!-- MAIN CSS -->
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body id="page-top">
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
   <div class="container">
-    <a class="navbar-brand" href="#">Victoria</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
-      <span class="navbar-toggler-icon"></span>
+    <a class="navbar-brand js-scroll" href="#page-top">Victoria</a>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault">
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="nav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link js-scroll" href="#home">Inicio</a></li>
+    <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link js-scroll active" href="#home">Inicio</a></li>
         <li class="nav-item"><a class="nav-link js-scroll" href="#about">Sobre mí</a></li>
         <li class="nav-item"><a class="nav-link js-scroll" href="#services">Servicios</a></li>
-        <li class="nav-item"><a class="nav-link js-scroll" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link js-scroll" href="#work">Portfolio</a></li>
         <li class="nav-item"><a class="nav-link js-scroll" href="#contact">Contacto</a></li>
       </ul>
     </div>
@@ -43,42 +42,59 @@
 </nav>
 
 <!-- HERO -->
-<section id="home" class="text-center text-white d-flex align-items-center" style="height:100vh; background:url('img/intro-Img.JPG') center/cover;">
+<div id="home" class="intro route bg-image" style="background-image: url(img/intro-Img.JPG)">
+  <div class="overlay-itro"></div>
+  <div class="intro-content display-table">
+    <div class="table-cell">
+      <div class="container text-center">
+        <h1 class="intro-title mb-4">Soy Victoria Casterá</h1>
+        <p class="intro-subtitle">
+          <span class="text-slider-items">Web Developer,Web Designer,Frontend Developer,Graphic Designer</span>
+          <strong class="text-slider"></strong>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="about-mf sect-pt4 route">
   <div class="container">
-    <h1>Bienvenidos</h1>
-    <h2>Soy Victoria Casterá</h2>
-    <p class="text-slider-items">Web Developer, Web Designer, Frontend Developer, Graphic Designer</p>
-    <strong class="text-slider"></strong>
+    <div class="box-shadow-full p-4">
+      <h5 class="title-left">Sobre mí</h5>
+      <p>
+        Me considero una persona responsable, dinámica y creativa, con facilidad de adaptación y de trabajar en equipo.
+      </p>
+    </div>
   </div>
 </section>
 
-<!-- SOBRE MI -->
-<section id="about" class="container py-5">
-  <h2>Sobre mí</h2>
-  <p>
-    Me considero una persona responsable, dinámica y creativa, con facilidad de adaptación y de trabajar en equipo.
-  </p>
-</section>
+<!-- SERVICES -->
+<section id="services" class="services-mf route bg-light">
+  <div class="container text-center">
+    <h3 class="title-a">Servicios</h3>
 
-<!-- SERVICIOS -->
-<section id="services" class="bg-light py-5">
-  <div class="container">
-    <h2>Servicios</h2>
     <div class="row">
 
       <div class="col-md-4">
-        <h4>Web Design</h4>
-        <p>Diseño de sitios modernos y responsivos.</p>
+        <div class="service-box">
+          <div class="service-ico"><span class="ico-circle"><i class="ion-monitor"></i></span></div>
+          <h2 class="s-title">Web Design</h2>
+        </div>
       </div>
 
       <div class="col-md-4">
-        <h4>Frontend</h4>
-        <p>Desarrollo con HTML, CSS, JS.</p>
+        <div class="service-box">
+          <div class="service-ico"><span class="ico-circle"><i class="ion-code"></i></span></div>
+          <h2 class="s-title">Frontend</h2>
+        </div>
       </div>
 
       <div class="col-md-4">
-        <h4>Graphic Design</h4>
-        <p>Diseño visual y branding.</p>
+        <div class="service-box">
+          <div class="service-ico"><span class="ico-circle"><i class="ion-paintbrush"></i></span></div>
+          <h2 class="s-title">Graphic Design</h2>
+        </div>
       </div>
 
     </div>
@@ -86,63 +102,83 @@
 </section>
 
 <!-- PORTFOLIO -->
-<section id="portfolio" class="container py-5">
-  <h2>Portfolio</h2>
-
-  <div class="row">
-
-    <div class="col-md-4">
-      <a href="img/1.jpg" data-lightbox="gallery">
-        <img src="img/1.jpg" class="img-fluid">
-      </a>
-    </div>
-
-    <div class="col-md-4">
-      <a href="img/2.jpg" data-lightbox="gallery">
-        <img src="img/2.jpg" class="img-fluid">
-      </a>
-    </div>
-
-    <div class="col-md-4">
-      <a href="img/4.jpg" data-lightbox="gallery">
-        <img src="img/4.jpg" class="img-fluid">
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<!-- CONTACTO -->
-<section id="contact" class="bg-light py-5">
+<section id="work" class="portfolio-mf sect-pt4 route">
   <div class="container">
-    <h2>Contacto</h2>
+    <h3 class="title-a text-center">Portfolio</h3>
 
-    <form action="https://formspree.io/f/tu_id" method="POST">
+    <div class="row">
 
-      <input type="text" name="name" placeholder="Nombre" class="form-control mb-2" required>
-      <input type="email" name="email" placeholder="Email" class="form-control mb-2" required>
-      <textarea name="message" placeholder="Mensaje" class="form-control mb-2" required></textarea>
+      <div class="col-md-4">
+        <div class="work-box">
+          <a href="img/1.jpg" data-lightbox="gallery">
+            <img src="img/1.jpg" class="img-fluid">
+          </a>
+        </div>
+      </div>
 
-      <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
+      <div class="col-md-4">
+        <div class="work-box">
+          <a href="img/2.jpg" data-lightbox="gallery">
+            <img src="img/2.jpg" class="img-fluid">
+          </a>
+        </div>
+      </div>
 
-    <p class="mt-3">Email: victoriacastera019@gmail.com</p>
+      <div class="col-md-4">
+        <div class="work-box">
+          <a href="img/4.jpg" data-lightbox="gallery">
+            <img src="img/4.jpg" class="img-fluid">
+          </a>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
-<!-- BOTÓN -->
-<a href="#" class="back-to-top btn btn-primary">↑</a>
+<!-- CONTACT -->
+<section id="contact" class="paralax-mf footer-paralax bg-image" style="background-image: url(img/overlay-bg.jpg)">
+  <div class="overlay-mf"></div>
+  <div class="container">
 
-<!-- JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Contacto</h5>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/counterup/1.0/jquery.counterup.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
+        <!-- ⚠️ FORM SIN PHP -->
+        <form action="https://formspree.io/f/tu_id" method="POST">
+          <input type="text" name="name" class="form-control mb-2" placeholder="Nombre" required>
+          <input type="email" name="email" class="form-control mb-2" placeholder="Email" required>
+          <textarea name="message" class="form-control mb-2" placeholder="Mensaje" required></textarea>
+          <button class="btn btn-primary">Enviar</button>
+        </form>
+
+      </div>
+
+      <div class="col-md-6">
+        <h5>Info</h5>
+        <p>Email: victoriacastera019@gmail.com</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- BACK TO TOP -->
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- JS ORIGINAL -->
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/jquery/jquery-migrate.min.js"></script>
+<script src="lib/popper/popper.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/counterup/jquery.waypoints.min.js"></script>
+<script src="lib/counterup/jquery.counterup.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+<script src="lib/typed/typed.min.js"></script>
 
 <script src="js/main.js"></script>
 
