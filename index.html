@@ -1,96 +1,112 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="utf-8">
   <title>Victoria Casterá</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Favicons (ARREGLADO) -->
-<link href="img/logo.jpg" rel="icon">
+  <!-- CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
 
-  <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Libraries CSS -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-  <!-- Main CSS -->
+  <!-- TU CSS -->
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
 
 <!-- NAV -->
-<nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
   <div class="container">
-    <a class="navbar-brand js-scroll" href="#page-top">Bienvenidos</a>
+    <a class="navbar-brand" href="#">Bienvenidos</a>
   </div>
 </nav>
 
-<!-- HERO -->
-<div id="home" class="intro route bg-image" style="background-image: url(img/intro-Img.JPG)">
-  <div class="overlay-itro"></div>
-  <div class="intro-content display-table">
-    <div class="table-cell">
-      <div class="container">
-        <h1 class="intro-title mb-4">Soy Victoria Casterá</h1>
-        <p class="intro-subtitle">
-          Web Developer, Web Designer, Frontend Developer, Graphic Designer
-        </p>
-      </div>
-    </div>
-  </div>
+<!-- INTRO -->
+<div class="jumbotron text-center" style="background-image:url(img/intro-Img.JPG); background-size:cover; color:white; margin-top:56px;">
+  <h1>Soy Victoria Casterá</h1>
+  <p>
+    <span class="text-slider-items">Web Developer,Web Designer,Frontend Developer,Graphic Designer</span>
+    <strong class="text-slider"></strong>
+  </p>
 </div>
 
-<!-- ABOUT -->
-<section id="about" class="about-mf sect-pt4 route">
-  <div class="container">
-    <h2>Sobre Mi</h2>
-    <p>
-      Me considero una persona responsable, dinámica y creativa, con facilidad de adaptación y de trabajar en equipo.
-    </p>
-  </div>
+<!-- SOBRE MI -->
+<section class="container p-5">
+  <h2>Sobre Mi</h2>
+  <p>Me considero una persona responsable, dinámica y creativa, con facilidad de adaptación y de trabajar en equipo.</p>
 </section>
 
-<!-- SERVICES -->
-<section id="service" class="services-mf route">
-  <div class="container">
-    <h3>Servicios</h3>
-    <p>Aquí puedes encontrar algunos de mis trabajos.</p>
-  </div>
+<!-- SERVICIOS -->
+<section class="bg-light p-5 text-center">
+  <h2>Servicios</h2>
+  <p>Aquí puedes encontrar algunos de mis trabajos.</p>
 </section>
 
 <!-- PORTFOLIO -->
-<section id="work" class="portfolio-mf sect-pt4 route">
-  <div class="container">
-    <h3>Portfolio</h3>
-    <div class="row">
-      <div class="col-md-4"><img src="img/1.jpg" class="img-fluid"></div>
-      <div class="col-md-4"><img src="img/2.jpg" class="img-fluid"></div>
-      <div class="col-md-4"><img src="img/4.jpg" class="img-fluid"></div>
+<section class="container p-5">
+  <h2>Portfolio</h2>
+  <div class="row">
+
+    <div class="col-md-4">
+      <a href="img/1.jpg" data-lightbox="gallery">
+        <img src="img/1.jpg" class="img-fluid">
+      </a>
     </div>
+
+    <div class="col-md-4">
+      <a href="img/Logo.jpg" data-lightbox="gallery">
+        <img src="img/Logo.jpg" class="img-fluid">
+      </a>
+    </div>
+
+    <div class="col-md-4">
+      <a href="img/4.jpg" data-lightbox="gallery">
+        <img src="img/4.jpg" class="img-fluid">
+      </a>
+    </div>
+
   </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="container mt-5">
-  <h3>Contacto</h3>
+<!-- CONTACTO -->
+<section class="bg-dark text-white p-5 text-center">
+  <h2>Contacto</h2>
   <p>Email: victoriacastera019@gmail.com</p>
+
+  <!-- FORMULARIO (SIN PHP) -->
+  <form action="https://formspree.io/f/xayrzzzz" method="POST" class="mt-4">
+    <input type="text" name="name" placeholder="Nombre" class="form-control mb-2" required>
+    <input type="email" name="email" placeholder="Email" class="form-control mb-2" required>
+    <textarea name="message" placeholder="Mensaje" class="form-control mb-2" required></textarea>
+    <button class="btn btn-primary">Enviar</button>
+  </form>
 </section>
 
-<!-- JS CDN (ARREGLADO) -->
+<!-- JS CDN -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
 
-<!-- Tus scripts -->
-<script src="lib/lightbox/js/lightbox.min.js"></script>
-<script src="lib/counterup/jquery.counterup.js"></script>
-<script src="contactform/contactform.js"></script>
-<script src="js/main.js"></script>
+<!-- TYPED -->
+<script>
+if (document.querySelector('.text-slider')) {
+  var typed_strings = document.querySelector('.text-slider-items').textContent;
+  new Typed('.text-slider', {
+    strings: typed_strings.split(','),
+    typeSpeed: 80,
+    loop: true,
+    backDelay: 1100,
+    backSpeed: 30
+  });
+}
+</script>
 
 </body>
 </html>
+```
