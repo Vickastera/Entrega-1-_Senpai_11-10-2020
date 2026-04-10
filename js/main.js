@@ -113,5 +113,30 @@
 			}
 		}
 	});
+	$('.filter-btn').click(function () {
+  var filter = $(this).attr('data-filter');
+
+  $('.filter-btn').removeClass('btn-primary').addClass('btn-outline-primary');
+  $(this).addClass('btn-primary');
+
+  if (filter == 'all') {
+    $('.work-item').show(300);
+  } else {
+    $('.work-item').hide(200);
+    $('.' + filter).show(300);
+  }
+});$('.filter-btn').click(function () {
+  var filter = $(this).attr('data-filter');
+
+  $('.filter-btn').removeClass('btn-primary').addClass('btn-outline-primary');
+  $(this).addClass('btn-primary');
+
+  if (filter == 'all') {
+    $('.work-item').show(300);
+  } else {
+    $('.work-item').hide(200);
+    $('.' + filter).show(300);
+  }
+});
 
 })(jQuery);
