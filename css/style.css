@@ -1219,3 +1219,40 @@ footer .credits a {
     bottom: 15px;
   }
 }
+.filter-btn {
+  margin: 5px;
+}
+
+.work-item {
+  display: block;
+  transition: 0.4s;
+}
+
+.work-box {
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.work-box img {
+  transition: 0.5s;
+}
+
+.work-box:hover img {
+  transform: scale(1.1);
+}
+
+.work-content {
+  padding: 10px;
+  background: #fff;
+  text-align: center;
+}
+
+.w-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.w-ctegory {
+  color: #0078ff;
+}
